@@ -1,0 +1,28 @@
+  
+  .nav {
+    display: flex;
+    justify-content: center;  /* Centers the list items horizontally inside the nav */
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin: 0 20px;  /* Space between the links */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 250;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #0070f3;
+  }
+  
