@@ -86,8 +86,22 @@ export default function Page() {
       {/* Contact Preview */}
       <section id="contact" className="h-screen flex flex-col justify-start items-start p-8 bg-[#FEFAE0]">
         <div className="mt-[44px]"></div>
-        <h2 className="text-3xl !text-[#5F6F52] font-bold mt-8 ml-8">Contact.</h2>
-        <h2 className="text-3xl !text-[#5F6F52]/70 mt-8 ml-8">Let&apos;s connect! Feel free to reach out for collaborations or opportunities.</h2>
+        <h2 className="text-3xl !text-[#5F6F52] font-bold mt-8 ml-8 !mb-4">Contact.</h2>
+        <h4 className="text-2xl !text-[#5F6F52]/85 mt-8 ml-8">I’d love to hear from you! Send me an email or connect with me on LinkedIn.</h4>
+
+        <div className="space-y-4 ml-8">
+          <h3 className="text-xl !text-[#5F6F52] font-semibold">Email:</h3>
+          <p className="text-lg text-[#5F6F52]">
+            <a href="mailto:cassidyjarrell17@gmail.com" className="hover:underline">cassidyjarrell17@gmail.com</a>
+          </p>
+        </div>
+
+        <div className="space-y-4 ml-8">
+          <h3 className="text-xl !text-[#5F6F52] font-semibold">Linkedin:</h3>
+          <p className="text-lg text-[#5F6F52]">
+            <a href="https://www.linkedin.com/in/cassidyjarrell/" className="hover:underline">https://www.linkedin.com/in/cassidyjarrell/</a>
+          </p>
+        </div>
       </section>
     </div>
   );
