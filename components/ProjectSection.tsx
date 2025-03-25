@@ -25,16 +25,16 @@ const ProjectSection = () => {
         modalContent: <PersonalPortfolioWebsite />,
     },
     {
-      title: 'TerraMetrics iOS App',
-      description: 'Description of project 1',
-      imageSrc: '/path-to-image/project1.jpg',
-      modalContent: <TerraMetricsiOS />,
-    },
-    {
       title: 'TerraMetrics IOT System',
       description: 'Description of project 2',
       imageSrc: '/path-to-image/project2.jpg',
       modalContent: Project2ModalContent,
+    },
+    {
+      title: 'TerraMetrics iOS App',
+      description: 'Description of project 1',
+      imageSrc: '/path-to-image/project1.jpg',
+      modalContent: <TerraMetricsiOS />,
     },
     {
       title: 'TerraMetrics Web Dashboard',
