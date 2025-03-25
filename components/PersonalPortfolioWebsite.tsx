@@ -8,7 +8,7 @@ export default function PersonalPortfolioWebsite()
             <p className="text-gray-700">Next.js (App Router), React, TypeScript, Tailwind CSS, Framer Motion.</p>
 
             <h4 className="!text-[#5F6F52]/85 font-semibold mt-4">Design Approach</h4>
-            <p className="text-gray-700">Inspired by Apple's clean, responsive UI with smooth animations and intuitive navigation.</p>
+            <p className="text-gray-700">Inspired by Apple&apos;s clean, responsive UI with smooth animations and intuitive navigation.</p>
 
             <div className="mt-10">
             <h4 className="!text-[#5F6F52]/85 text-2xl !font-semibold">Features</h4>
