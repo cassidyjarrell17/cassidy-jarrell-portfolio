@@ -1,6 +1,7 @@
 import PersonalPortfolioWebsite from './PersonalPortfolioWebsite';
 import ProjectCard from './ProjectCard';
 import TerraMetricsiOS from './TerraMetricsiOSApp';
+import TerraMetricsIOTSystem from './TerraMetricsIOTSystem';
 
 const ProjectSection = () => {
   const Project2ModalContent = (
@@ -26,19 +27,19 @@ const ProjectSection = () => {
     },
     {
       title: 'TerraMetrics IOT System',
-      description: 'Description of project 2',
-      imageSrc: '/path-to-image/project2.jpg',
-      modalContent: Project2ModalContent,
+      description: 'A smart garden monitoring system that tracks soil moisture, temperature, and humidity.',
+      imageSrc: '/arduino-4753005_1280.jpg',
+      modalContent: <TerraMetricsIOTSystem />,
     },
     {
-      title: 'TerraMetrics iOS App',
-      description: 'Description of project 1',
-      imageSrc: '/path-to-image/project1.jpg',
+      title: 'TerraMetrics iOS Application',
+      description: 'An iOS application that provides real-time data from the TerraMetrics IOT system.',
+      imageSrc: '/TerraMetricsiOS.png',
       modalContent: <TerraMetricsiOS />,
     },
     {
       title: 'TerraMetrics Web Dashboard',
-      description: 'Description of project 3',
+      description: 'A web dashboard for visualizing data from the TerraMetrics IOT system.',
       imageSrc: '/path-to-image/project3.jpg',
       modalContent: Project3ModalContent,
     },
