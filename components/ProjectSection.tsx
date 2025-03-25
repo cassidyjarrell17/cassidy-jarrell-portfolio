@@ -4,14 +4,7 @@ import TerraMetricsiOS from './TerraMetricsiOSApp';
 import TerraMetricsIOTSystem from './TerraMetricsIOTSystem';
 
 const ProjectSection = () => {
-  const Project3ModalContent = (
-    <>
-      <h2 className="text-2xl font-bold">Project 3 Details</h2>
-      <p>This is more detailed information about Project 3.</p>
-    </>
-  );
-
-  const projects = [
+    const projects = [
     {
         title: 'Personal Portfolio Website',
         description: 'A modern, interactive portfolio website built using React, Next.js, and Tailwind CSS.',
@@ -29,13 +22,7 @@ const ProjectSection = () => {
       description: 'An iOS application that provides real-time data from the TerraMetrics IOT system.',
       imageSrc: '/TerraMetricsiOS.png',
       modalContent: <TerraMetricsiOS />,
-    },
-    {
-      title: 'TerraMetrics Web Dashboard',
-      description: 'A web dashboard for visualizing data from the TerraMetrics IOT system.',
-      imageSrc: '/path-to-image/project3.jpg',
-      modalContent: Project3ModalContent,
-    },
+    }
     // Add more projects as needed
   ];
 
