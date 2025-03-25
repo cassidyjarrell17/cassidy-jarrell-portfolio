@@ -80,7 +80,7 @@ export default function Page() {
         >
           Take a look at what I&apos;m working on.
         </motion.h2>
-        <h4 className="text-2xl !text-[#B99470] mt-8 ml-8 !mb-8">Click to see more.</h4>
+        <h4 className="text-2xl !text-[#B99470] mt-8 ml-8 !mb-8">Click on a project for more details.</h4>
         <ProjectsSection/>
       </section>
 
