@@ -1,14 +1,8 @@
+import PersonalPortfolioWebsite from './PersonalPortfolioWebsite';
 import ProjectCard from './ProjectCard';
+import TerraMetricsiOS from './TerraMetricsiOSApp';
 
 const ProjectSection = () => {
-  // Define the modal content as components
-  const Project1ModalContent = (
-    <>
-      <h2 className="text-2xl font-bold">Project 1 Details</h2>
-      <p>This is more detailed information about Project 1.</p>
-    </>
-  );
-
   const Project2ModalContent = (
     <>
       <h2 className="text-2xl font-bold">Project 2 Details</h2>
@@ -25,19 +19,25 @@ const ProjectSection = () => {
 
   const projects = [
     {
-      title: 'Project 1',
-      description: 'Description of project 1',
-      imageSrc: '/path-to-image/project1.jpg',
-      modalContent: Project1ModalContent,
+        title: 'Personal Portfolio Website',
+        description: 'A modern, interactive portfolio website built using React, Next.js, and Tailwind CSS.',
+        imageSrc: '/PersonalPortfolioWebsite.png',
+        modalContent: <PersonalPortfolioWebsite />,
     },
     {
-      title: 'Project 2',
+      title: 'TerraMetrics iOS App',
+      description: 'Description of project 1',
+      imageSrc: '/path-to-image/project1.jpg',
+      modalContent: <TerraMetricsiOS />,
+    },
+    {
+      title: 'TerraMetrics IOT System',
       description: 'Description of project 2',
       imageSrc: '/path-to-image/project2.jpg',
       modalContent: Project2ModalContent,
     },
     {
-      title: 'Project 3',
+      title: 'TerraMetrics Web Dashboard',
       description: 'Description of project 3',
       imageSrc: '/path-to-image/project3.jpg',
       modalContent: Project3ModalContent,
