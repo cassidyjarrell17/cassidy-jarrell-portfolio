@@ -2,6 +2,7 @@
 import Header from '../components/Header';
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { Analytics } from '@vercel/analytics/next';
 
 export default function RootLayout({
   children,
@@ -13,6 +14,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );
