@@ -50,16 +50,16 @@ export default function Page() {
         }}
       >
         <div className="mt-[44px]"></div>
-        <h2 className="text-3xl !text-[#A9B388] font-bold mt-8 ml-8 !mb-4">About me.</h2>
-        <h5 className="!text-md !text-[#5F6F52]/90 mt-8 ml-8 !mb-8">
+        <h2 className="text-3xl !text-[#FEFAE0] font-bold mt-8 ml-8 !mb-4">About me.</h2>
+        <h5 className="!text-md !text-[#5F6F52] mt-8 ml-8 !mb-8">
           Hi, I&apos;m Cassidy. I am a software engineer with over 6 years of experience developing web applications, internal tools, and automation systems.
           At Fujifilm Dimatix, I led the development of systems that optimize manufacturing processes, improve efficiency, and reduce human processing errors.
 
         </h5> 
-        <h5 className="!text-md !text-[#5F6F52]/90 mt-8 ml-8 !mb-8">
+        <h5 className="!text-md !text-[#5F6F52] mt-8 ml-8 !mb-8">
         I am always curious to learn about the latest technologies in the software engineering field. I thrive in collaborative environments, and I am always eager to hear different perspectives. This mindset helps me stay innovative and approach problems with creative solutions.
         </h5>
-        <h5 className="!text-md !text-[#5F6F52]/90 mt-8 ml-8">
+        <h5 className="!text-md !text-[#5F6F52] mt-8 ml-8">
           Outside of work, I enjoy exploring my creativity through sewing, gardening, and playing guitar. I have three cats named Calypso, Miso, and Comet. I also love to watch and attend sporting events. 
           Find me at a Bay FC or Valkyries game this season.
         </h5>
@@ -76,10 +76,11 @@ export default function Page() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl font-bold mt-8 ml-8 !text-[#FEFAE0] inline-block !mb-8"
+          className="text-3xl font-bold mt-8 ml-8 !text-[#FEFAE0] inline-block"
         >
           Take a look at what I&apos;m working on.
         </motion.h2>
+        <h4 className="text-2xl !text-[#B99470] mt-8 ml-8 !mb-8">Click to see more.</h4>
         <ProjectsSection/>
       </section>
 
@@ -87,7 +88,7 @@ export default function Page() {
       <section id="contact" className="h-screen flex flex-col justify-start items-start p-8 bg-[#FEFAE0]">
         <div className="mt-[44px]"></div>
         <h2 className="text-3xl !text-[#5F6F52] font-bold mt-8 ml-8 !mb-4">Contact.</h2>
-        <h4 className="text-2xl !text-[#5F6F52]/85 mt-8 ml-8">I’d love to hear from you! Send me an email or connect with me on LinkedIn.</h4>
+        <h4 className="text-2xl !text-[#5F6F52]/85 ml-8">I’d love to hear from you! Send me an email or connect with me on LinkedIn.</h4>
 
         <div className="space-y-4 ml-8">
           <h3 className="text-xl !text-[#5F6F52] font-semibold">Email:</h3>
