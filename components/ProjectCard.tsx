@@ -1,29 +1,50 @@
-import Link from "next/link";
+import { useState } from 'react';
+import Modal from './Modal';
 
+// Define the types for the props
 interface ProjectCardProps {
-    imageSrc: string;
-    title: string;
-    description: string;
-    link: string;
+  title: string;
+  description: string;
+  imageSrc: string;
+  modalContent: React.ReactNode; // Expecting a React component or JSX
 }
 
-export const ProjectCard = ({ imageSrc, title, description, link }: ProjectCardProps) => {
-    return (
-        <Link
-            href={link}
-            className="!no-underline block !h-[450px] p-6 max-w-xs mx-auto bg-[#FEFAE0] rounded-xl shadow-md" // Set the height here
-        >
-            <div className="flex flex-col justify-between h-full"> {/* Ensure content is distributed inside the card */}
-                <div>
-                    <h3 className="!text-[#A9B388]">{title}</h3>
-                    <p className="!text-[#A9B388]/70">{description}</p>
-                </div>
-                <img
-                    src={imageSrc}
-                    alt={title}
-                    className="w-full h-[200px] object-cover" // Set the image height here
-                />
-            </div>
-        </Link>
-    );
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageSrc, modalContent }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
+
+  return (
+    <div className="relative !min-w-[260px] !max-w-[300px] w-full h-[450px] p-6 bg-[#FEFAE0] rounded-xl shadow-md flex flex-col">
+      {/* Project Card Content */}
+      <img
+        src={imageSrc}
+        alt={title}
+        className="w-full h-40 object-cover rounded-t-lg"
+      />
+      <div className="p-4 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold">{title}</h3>
+        <p className="text-sm text-gray-600">{description}</p>
+      </div>
+
+      {/* Modal Trigger Button */}
+      <button
+        onClick={handleOpenModal}
+        className="absolute bottom-4 right-4 bg-[#B99470] text-white p-4 !rounded-full w-12 h-12 flex items-center justify-center shadow-md"
+      >
+        +
+      </button>
+
+      {/* Modal Component */}
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        <div className="p-4">
+          {/* Here we render the modalContent passed as a component */}
+          {modalContent}
+        </div>
+      </Modal>
+    </div>
+  );
 };
+
+export default ProjectCard;
