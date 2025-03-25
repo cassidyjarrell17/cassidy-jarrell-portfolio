@@ -60,7 +60,7 @@ export default function Page() {
         I am always curious to learn about the latest technologies in the software engineering field. I thrive in collaborative environments, and I am always eager to hear different perspectives. This mindset helps me stay innovative and approach problems with creative solutions.
         </h5>
         <h5 className="!text-md !text-[#5F6F52] mt-8 ml-8">
-          Outside of work, I enjoy exploring my creativity through sewing, gardening, and playing guitar. I have three cats named Calypso, Miso, and Comet. I also love to watch and attend sporting events. 
+          Outside of work, I enjoy sewing, gardening, and playing guitar. I have three cats named Calypso, Miso, and Comet. I also love to watch and attend sporting events. 
           Find me at a Bay FC or Valkyries game this season.
         </h5>
       </section>
