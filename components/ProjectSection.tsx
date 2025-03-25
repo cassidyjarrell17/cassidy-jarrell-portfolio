@@ -4,13 +4,6 @@ import TerraMetricsiOS from './TerraMetricsiOSApp';
 import TerraMetricsIOTSystem from './TerraMetricsIOTSystem';
 
 const ProjectSection = () => {
-  const Project2ModalContent = (
-    <>
-      <h2 className="text-2xl font-bold">Project 2 Details</h2>
-      <p>This is more detailed information about Project 2.</p>
-    </>
-  );
-
   const Project3ModalContent = (
     <>
       <h2 className="text-2xl font-bold">Project 3 Details</h2>
